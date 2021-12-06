@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   margin-top: 40vh;
+}
+
+p{
+    padding: 4vh;
+}
+h1{
+    color: rgb(47, 0, 255);
+}
+
+body.dark{
+    background-color: black;
+    color: white;
+}
+.toggle{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding: 1vh 2vh 0 0;
+}

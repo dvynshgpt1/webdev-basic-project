@@ -1,0 +1,177 @@
+/* suppose my realme default size is from 424 to 469 
+  it means default code  is written for 424 to 469 size device */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  width: 18vh;
+  position: absolute;
+  right: 0;
+}
+button {
+  background: url(./Hamburger.png) top center no-repeat;
+  height: 7vh;
+  width: 100%;
+  justify-content: center;
+  z-index: 2;
+  border: none;
+  background-size: 5vh;
+  display: block;
+  position: absolute;
+  right: -5.6vh;
+}
+
+button.active {
+  /* transform: translateX(-65px); */
+  background: url(./Cross\ hamburger.png) top center no-repeat;
+  background-size: 5vh;
+  background-color: lightblue;
+  width: 15.9vh;
+  position: absolute;
+  right: 0.3px;
+  height: 7vh;
+}
+#nav {
+  display: flex;
+  position: absolute;
+  top: 6vh;
+  flex-direction: column;
+  width: fit-content;
+  right: 0;
+  padding: 2.2vh;
+  display: none;
+}
+#nav.active {
+  /* transform: translateX(0); */
+  display: block;
+  background-color: lightblue;
+  height: 94%;
+}
+
+li {
+  text-align: end;
+  list-style: none;
+  font-size: 5.6vw;
+  /* font-size: 4.5vw; */
+  padding-top: 3vh;
+  font-family: cursive;
+  padding-right: 2vh;
+}
+a {
+  padding-left: 13px;
+  color: black;
+  text-decoration: none;
+}
+
+/* suppose my realme default size is from 424 to 469 
+  it means default code  is written for 424 to 469 size device */
+
+/* 470 px to 767px   */
+@media (min-width: 470px) and (max-width: 767px) {
+  li {
+    font-size: 0.63rem;
+  }
+}
+
+/*  768 px to 899px   */
+
+@media (min-width: 768px) and (max-width: 899px) {
+  header {
+    width: 100%;
+    height: 11vh;
+  }
+  button {
+    display: none;
+  }
+  button.active {
+    display: none;
+  }
+
+  #nav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    padding: 0 9vh;
+  }
+  #nav.active {
+    background-color: transparent;
+  }
+  li {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    list-style: none;
+    font-size: 0.8rem;
+    padding-top: 3vh;
+    font-family: cursive;
+  }
+  a {
+    padding-left: 13px;
+    color: black;
+    text-decoration: none;
+  }
+}
+
+/* real me phone in horizontal mode (min width 850px)  */
+
+@media (min-width: 830px) and (max-width: 880px) {
+  /* no need right now */
+  /* upper  768 to 899 css media working fine for this  */
+  /* if above css media doesn't work for phone in horizontal mode then you can write this also */
+}
+
+
+
+/* realme phone after opening desktop mode */
+
+@media (min-width: 980px) and (max-width: 1050px) {
+  li {
+    font-size: 2.72rem;
+  }
+}
+
+/* full desktop mode (max-width 1280px) */
+
+@media (min-width: 1051px) and (max-width: 1290px) {
+  header {
+    width: 100%;
+    height: 11vh;
+  }
+  button {
+    display: none;
+  }
+  button.active {
+    display: none;
+  }
+
+  #nav {
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    padding: 0 9vh;
+  }
+
+  #nav.active {
+    background-color: transparent;
+  }
+
+  li {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    list-style: none;
+    font-size: 1.2vw;
+    padding-top: 3vh;
+    font-family: cursive;
+  }
+  a {
+    padding-left: 13px;
+    color: black;
+    text-decoration: none;
+  }
+}
